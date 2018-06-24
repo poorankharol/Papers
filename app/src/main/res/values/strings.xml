@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gtu Papers</string>
+    <string name="title_activity_paper_card">PaperCardActivity</string>
+    <string name="title_activity_semester_seven">Semester Seven</string>
+</resources>

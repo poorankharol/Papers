@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "813657167636",
+    "firebase_url": "https://papers-4c6b9.firebaseio.com",
+    "project_id": "papers-4c6b9",
+    "storage_bucket": "papers-4c6b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813657167636:android:ffc89b51eb6964b7",
+        "android_client_info": {
+          "package_name": "com.kharol.papers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813657167636-i6aa6ntih9bsqrjudsuesrj6tat47v1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kharol.papers",
+            "certificate_hash": "98bd4c3f78bf46f8a21b7444c868a309f067225f"
+          }
+        },
+        {
+          "client_id": "813657167636-8naldvk4g8sc1v7i3a0s05o93ariqgcp.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "813657167636-8naldvk4g8sc1v7i3a0s05o93ariqgcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAPN5lLKqS0RBkjNjIG3oEtE5ixzj6ORo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813657167636-8naldvk4g8sc1v7i3a0s05o93ariqgcp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
