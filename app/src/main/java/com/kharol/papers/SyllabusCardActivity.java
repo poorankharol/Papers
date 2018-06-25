@@ -7,7 +7,7 @@ import android.widget.ListView;
 import com.kharol.papers.ui.ListAdapterSyllabus;
 import com.kharol.papers.ui.ListApdaterIT;
 
-public class PaperCardSyllabus extends AppCompatActivity {
+public class SyllabusCardActivity extends AppCompatActivity {
 
 
     ListView syllabus;

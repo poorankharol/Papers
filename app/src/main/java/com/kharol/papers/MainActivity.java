@@ -10,6 +10,10 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import uk.co.deanwild.materialshowcaseview.MaterialShowcaseSequence;
+import uk.co.deanwild.materialshowcaseview.ShowcaseConfig;
+
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
 
@@ -17,6 +21,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Boolean isFabOpen=false;
     private FloatingActionButton fab,fab1,fab2;
     private Animation fab_open,fab_close,rotate_forward,rotate_backard;
+
+
+    //Tutor
+    private static final String SHOWCASE_ID = "Sequence Showcase";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,6 +50,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    protected void onStart()
+    {
+        super.onStart();
+        showTutorSequence(500);
+    }
+
+    private void showTutorSequence(int i)
+    {
+        ShowcaseConfig config = new ShowcaseConfig();
+        config.setDelay(i);
+
+        MaterialShowcaseSequence sequence = new MaterialShowcaseSequence(this, SHOWCASE_ID);
+
+        sequence.setConfig(config);
+
+        sequence.addSequenceItem(papercardId, "Papers can be downloaded from here!!", "GOT IT");
+
+        sequence.addSequenceItem(papercardSyllabus, "Syllabus can be downloaded from here!!", "GOT IT");
+
+        /*sequence.addSequenceItem(
+                new MaterialShowcaseView.Builder(this)
+                        .setTarget(papercardSyllabus)
+                        .setDismissText("OK")
+                        .setContentText("This is a textview made for the second sequence")
+                        .withRectangleShape(true)
+                        .build()
+        );
+
+        /*sequence.addSequenceItem(
+                new MaterialShowcaseView.Builder(this)
+                        .setTarget(mView3)
+                        .setDismissText("UNDERSTAND")
+                        .setContentText("This is the checkbox made for the third sequence")
+                        .withCircleShape()
+                        .build()
+        );*/
+
+        sequence.start();
+
+    }
+
+    @Override
     public void onClick(View view)
     {
         switch (view.getId())
@@ -48,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(getApplicationContext(),PaperCardActivity.class));
                 break;
             case R.id.papercardSyllabus:
-                startActivity(new Intent(getApplicationContext(),PaperCardSyllabus.class));
+                startActivity(new Intent(getApplicationContext(),SyllabusCardActivity.class));
                 break;
             case R.id.fab:
                 animateFab();

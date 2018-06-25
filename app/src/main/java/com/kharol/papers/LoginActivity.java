@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity
         //if the user is already signed in
         //we will close this activity
         //and take the user to profile activity
-        showProgressDialog();
+        //showProgressDialog();
         if (mAuth.getCurrentUser() != null)
         {
             hideProgressDialog();

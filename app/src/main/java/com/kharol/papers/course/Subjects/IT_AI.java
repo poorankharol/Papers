@@ -28,12 +28,11 @@ import com.kharol.papers.urls.URLs;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import static com.kharol.papers.urls.URLs.AI_2180703;
 
 import java.io.File;
 import java.util.ArrayList;
 
-import static com.kharol.papers.urls.URLs.AI_11;
 
 public class IT_AI extends AppCompatActivity
 {
@@ -56,7 +55,7 @@ public class IT_AI extends AppCompatActivity
                 if (i==11)
                 {
                     //TODO Check IN Storage
-                    new DownloadTask(IT_AI.this,AI_11);
+                    new DownloadTask(IT_AI.this,AI_2180703);
                     addNotification(selectedItem);
                     viewPDF(view,selectedItem);
                 }

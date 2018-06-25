@@ -17,8 +17,14 @@ import com.kharol.papers.R;
 import com.kharol.papers.helper.DownloadTask;
 import com.kharol.papers.ui.ListApdaterIT;
 
-import static com.kharol.papers.urls.URLs.AI_180703;
 import static com.kharol.papers.urls.URLs.AI_2180703;
+import static com.kharol.papers.urls.URLs.AP_2180715;
+import static com.kharol.papers.urls.URLs.CIS_2180712;
+import static com.kharol.papers.urls.URLs.IOS_2180714;
+import static com.kharol.papers.urls.URLs.IOT_2180709;
+import static com.kharol.papers.urls.URLs.MA_2181607;
+import static com.kharol.papers.urls.URLs.PP_2180711;
+import static com.kharol.papers.urls.URLs.WDM_2180713;
 
 
 public class SemesterEight extends AppCompatActivity
@@ -65,8 +71,8 @@ public class SemesterEight extends AppCompatActivity
         if (requestCode == 100 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
         {
             initialize();
-        } else
-            {
+        }
+        else {
             permission_check();
         }
     }
@@ -83,7 +89,7 @@ public class SemesterEight extends AppCompatActivity
             {
                 if (i == 0)
                 {
-                    CharSequence[] AI_CODES = {"180703", "2180703"};
+                    CharSequence[] AI_CODES = {"2180703"};
                     AlertDialog.Builder builder = new AlertDialog.Builder(SemesterEight.this);
                     builder.setTitle("Select File To Download..!");
                     builder.setItems(AI_CODES, new DialogInterface.OnClickListener()
@@ -92,11 +98,133 @@ public class SemesterEight extends AppCompatActivity
                         {
                             if (item == 0)
                             {
-                                new DownloadTask(SemesterEight.this, AI_180703);
-                            }
-                            if (item == 1)
-                            {
                                 new DownloadTask(SemesterEight.this, AI_2180703);
+                            }
+                        }
+                    });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
+                if (i==1)
+                {
+                    CharSequence[] AI_CODES = {"2180709"};
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SemesterEight.this);
+                    builder.setTitle("Select File To Download..!");
+                    builder.setItems(AI_CODES, new DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface dialog, int item)
+                        {
+                            if (item == 0)
+                            {
+                                new DownloadTask(SemesterEight.this, IOT_2180709);
+                            }
+                        }
+                    });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
+                if (i==2)
+                {
+                    CharSequence[] AI_CODES = {"2180711"};
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SemesterEight.this);
+                    builder.setTitle("Select File To Download..!");
+                    builder.setItems(AI_CODES, new DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface dialog, int item)
+                        {
+                            if (item == 0)
+                            {
+                                new DownloadTask(SemesterEight.this, PP_2180711);
+                            }
+                        }
+                    });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
+                if (i==3)
+                {
+                    CharSequence[] AI_CODES = {"2180712"};
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SemesterEight.this);
+                    builder.setTitle("Select File To Download..!");
+                    builder.setItems(AI_CODES, new DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface dialog, int item)
+                        {
+                            if (item == 0)
+                            {
+                                new DownloadTask(SemesterEight.this, CIS_2180712);
+                            }
+                        }
+                    });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
+                if (i==4)
+                {
+                    CharSequence[] AI_CODES = {"2180713"};
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SemesterEight.this);
+                    builder.setTitle("Select File To Download..!");
+                    builder.setItems(AI_CODES, new DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface dialog, int item)
+                        {
+                            if (item == 0)
+                            {
+                                new DownloadTask(SemesterEight.this, WDM_2180713);
+                            }
+                        }
+                    });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
+                if (i==5)
+                {
+                    CharSequence[] AI_CODES = {"2180714"};
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SemesterEight.this);
+                    builder.setTitle("Select File To Download..!");
+                    builder.setItems(AI_CODES, new DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface dialog, int item)
+                        {
+                            if (item == 0)
+                            {
+                                new DownloadTask(SemesterEight.this, IOS_2180714);
+                            }
+                        }
+                    });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
+                if (i==6)
+                {
+                    CharSequence[] AI_CODES = {"2180715"};
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SemesterEight.this);
+                    builder.setTitle("Select File To Download..!");
+                    builder.setItems(AI_CODES, new DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface dialog, int item)
+                        {
+                            if (item == 0)
+                            {
+                                new DownloadTask(SemesterEight.this, AP_2180715);
+                            }
+                        }
+                    });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
+                if (i==7)
+                {
+                    CharSequence[] AI_CODES = {"2181607"};
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SemesterEight.this);
+                    builder.setTitle("Select File To Download..!");
+                    builder.setItems(AI_CODES, new DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface dialog, int item)
+                        {
+                            if (item == 0)
+                            {
+                                new DownloadTask(SemesterEight.this, MA_2181607);
                             }
                         }
                     });

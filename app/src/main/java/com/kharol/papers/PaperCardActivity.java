@@ -39,7 +39,7 @@ public class PaperCardActivity extends AppCompatActivity {
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
-
+        expListView.expandGroup(0);
 
         // Listview on child click listener
         expListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener()

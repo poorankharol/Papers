@@ -17,7 +17,6 @@ import com.kharol.papers.R;
 import com.kharol.papers.helper.DownloadTask;
 import com.kharol.papers.ui.ListApdaterIT;
 
-import static com.kharol.papers.urls.URLs.AI_180703;
 import static com.kharol.papers.urls.URLs.AI_2180703;
 
 public class SemesterSix extends AppCompatActivity
@@ -90,7 +89,7 @@ public class SemesterSix extends AppCompatActivity
                         {
                             if (item == 0)
                             {
-                                new DownloadTask(SemesterSix.this, AI_180703);
+                                new DownloadTask(SemesterSix.this, AI_2180703);
                             }
                             if (item == 1)
                             {

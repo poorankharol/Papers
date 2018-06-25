@@ -9,9 +9,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/contract"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/contract"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity">
@@ -64,7 +64,7 @@
             android:name=".course.IT.SemesterSix"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".PaperCardSyllabus"
+            android:name=".SyllabusCardActivity"
             android:theme="@style/AppTheme"></activity>
     </application>
 
