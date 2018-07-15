@@ -22,6 +22,7 @@ allprojects {
         jcenter()
         //add these two lines
         mavenCentral()
+        maven { url 'https://jitpack.io' }
         maven { url 'https://maven.google.com' }
     }
 }
